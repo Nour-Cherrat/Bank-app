@@ -2,6 +2,7 @@ package ma.ensa.authenticationactivty;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -40,7 +41,10 @@ public class TransactionActivity extends AppCompatActivity {
         trans.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(),"item clicked", Toast.LENGTH_LONG);
+                Intent intent = new Intent(getApplicationContext(),TransactionDetailsActivity.class);
+                intent.putExtra("transactionObject",listTrans.get(position));
+                startActivity(intent);
+
             }
         });
     }
