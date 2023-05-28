@@ -48,6 +48,10 @@ public class Transaction implements Parcelable {
         }
     };
 
+    public Transaction() {
+
+    }
+
     public Integer getIcon() {
         return icon;
     }
@@ -125,4 +129,3 @@ public class Transaction implements Parcelable {
         dest.writeDouble(solde);
     }
 }
-
