@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class AuthenticationActivity extends AppCompatActivity {
 
@@ -13,6 +14,14 @@ public class AuthenticationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ImageView myMap = findViewById(R.id.gMap);
+        myMap.setBackgroundResource(R.drawable.googlemaps);
+        myMap.setOnClickListener(v -> {
+
+
+            Intent intent = new Intent(AuthenticationActivity.this, MapsActivity.class);
+            startActivity(intent);
+        });
     }
 
     @Override

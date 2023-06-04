@@ -73,8 +73,6 @@
         android:layout_gravity="center"
         tools:ignore="MissingConstraints">
 
-
-
         <Button
             android:id="@+id/login"
             android:layout_width="fill_parent"
@@ -83,6 +81,27 @@
             android:layout_weight="20"
             android:layout_marginTop="300dp"
             android:layout_gravity="top"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/gMap"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:src="@drawable/googlemaps"
+            tools:ignore="MissingConstraints" />
 
     </LinearLayout>
 
